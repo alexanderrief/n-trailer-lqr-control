@@ -1,0 +1,17 @@
+ # Default regime file.
+ # Vehicle geometry, trajectory, and tuning are configured in scenario.yaml.
+
+- Name: backward_tvlqr
+  clear previous: !!python/bool True
+
+  Model:
+   type: nonlinearNTrailer
+
+  Solver:
+   type: ODEInt
+   measure rate: 50
+   step size: 0.02
+   end time: 30.0
+
+  Controller:
+   type: BackwardTVLQRController

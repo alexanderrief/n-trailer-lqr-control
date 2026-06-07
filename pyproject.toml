@@ -1,0 +1,30 @@
+[project]
+name = "n-trailer-lqr-control"
+version = "1.0.0"
+description = "Kinematic n-trailer vehicle simulation with time-varying LQR control, built on PyMoskito"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Alexander Rief" }]
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.11",
+    "sympy>=1.12",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# PyMoskito GUI (Qt). The pyqt5-qt5 pin works around a broken
+# 5.15.x wheel combination on Windows.
+gui = [
+    "pymoskito>=0.4.1",
+    "pyqt5-qt5==5.15.2",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ntrailer"]

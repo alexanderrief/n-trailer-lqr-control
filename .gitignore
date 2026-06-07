@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+results/
+*.egg-info/
+dist/
+build/
+.venv/
+uv.lock
+# stale symbolic caches from earlier development
+*.pkl
+pymoskito.log*
+venv/
