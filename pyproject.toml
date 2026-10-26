@@ -21,6 +21,7 @@ gui = [
     "pymoskito>=0.4.1",
     "pyqt5-qt5==5.15.2",
 ]
+test = ["pytest>=7"]
 
 [build-system]
 requires = ["setuptools>=68"]
@@ -28,3 +29,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["ntrailer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

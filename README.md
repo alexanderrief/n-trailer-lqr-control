@@ -68,6 +68,16 @@ python scripts/run_gui.py
 
 ![GUI quickstart](docs/gui_quickstart.png)
 
+## Tests
+
+```bash
+pip install -e ".[test]"
+pytest
+```
+
+Smoke tests for the symbolic model and output map, plus a closed-loop check that
+TV-LQR recovers from a 5° joint deflection while the open-loop run jackknifes.
+
 ## Thesis
 
 A. Rief, *Lineare Ansätze zur Regelung eines Mehranhängersystems*.
