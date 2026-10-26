@@ -10,8 +10,8 @@ reference path, stabilized by a **time-varying LQR**. The repository contains:
 - a headless demo script and a PyMoskito GUI with an animated visualizer.
 
 Code from my Bachelor's thesis in Mechatronics (University of Innsbruck / UMIT Tirol, 2025).
-In the thesis, the controllers were also implemented in C++ on an STM32 and tested on a
-physical multi-trailer testbed; that embedded code is not part of this repository.
+In the thesis, the controllers were also tested on a physical multi-trailer testbed (STM32, C++
+lab code); that embedded code is not part of this repository.
 
 ![Backward driving result](docs/backward_driving.png)
 
